@@ -43,3 +43,12 @@ command W :wall
 " Autocommands
 autocmd FileType tex        nnoremap <silent> <F5> :!latexmk -pdflua -shell-escape -synctex=1 %<CR>
 autocmd FileType markdown   nnoremap <silent> <F5> :!pandoc % -o out.pdf<CR>
+
+" Status line
+let g:airline_section_z = '%p%% %l/%L:%c'
+let g:airline_section_x = '%y'
+
+" let g:airline_theme='violet'
+
+set statusline+=%{FugitiveStatusline()}
+
