@@ -10,3 +10,15 @@
 [submodule "thirdparty/plugins/minimap"]
 	path = thirdparty/plugins/minimap
 	url = https://github.com/wfxr/minimap.vim.git
+[submodule "thirdparty/plugins/figutive"]
+	path = thirdparty/plugins/figutive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "thirdparty/plugins/flog"]
+	path = thirdparty/plugins/flog
+	url = https://github.com/rbong/vim-flog.git
+[submodule "thirdparty/plugins/commentary"]
+	path = thirdparty/plugins/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "thirdparty/plugins/airline"]
+	path = thirdparty/plugins/airline
+	url = https://github.com/vim-airline/vim-airline.git
