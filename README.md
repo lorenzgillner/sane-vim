@@ -1,4 +1,4 @@
-# sane-vim
+# VIMsane
 
 Vim for the 21st Century
 
