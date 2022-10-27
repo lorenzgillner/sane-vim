@@ -1,3 +1,12 @@
 [submodule "thirdparty/pathogen"]
 	path = thirdparty/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "thirdparty/nerdtree"]
+	path = thirdparty/plugins/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "thirdparty/plugins/tagbar"]
+	path = thirdparty/plugins/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "thirdparty/plugins/minimap"]
+	path = thirdparty/plugins/minimap
+	url = https://github.com/wfxr/minimap.vim.git
