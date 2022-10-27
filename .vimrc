@@ -30,19 +30,25 @@ noremap <C-p> :bprevious<CR>
 noremap <silent> <CR> :Commentary<CR>
 
 " F-Keys
+" <F1> reserved for help
+noremap <silent> <F2> :NERDTreeToggle<CR>
+noremap <silent> <F3> :TagbarToggle<CR>
+noremap <silent> <F4> :MinimapToggle
 noremap <silent> <F5> :!make
-noremap <silent> <F8> :TagbarToggle<CR>
-noremap <silent> <F9> :NERDTreeToggle<CR>
+" fallback
+noremap <silent> <F6> :!make %
+" TODO <F7> for running / preview
+
+" Autocommands for builds (always use <F6>)
+autocmd FileType c          nnoremap <silent> <F6> :!gcc -Wall -o a.out %<CR>
+autocmd FileType tex        nnoremap <silent> <F6> :!latexmk -pdflua -shell-escape -synctex=1 %<CR>
+autocmd FileType markdown   nnoremap <silent> <F6> :!pandoc % -o out.pdf<CR>
 
 " Commands
 command DEspell :setlocal spell spelllang=de
 command ENspell :setlocal spell spelllang=en
 command Q :wq
 command W :wall
-
-" Autocommands
-autocmd FileType tex        nnoremap <silent> <F5> :!latexmk -pdflua -shell-escape -synctex=1 %<CR>
-autocmd FileType markdown   nnoremap <silent> <F5> :!pandoc % -o out.pdf<CR>
 
 " Status line
 let g:airline_section_z = '%p%% %l/%L:%c'
