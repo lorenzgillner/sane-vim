@@ -14,17 +14,23 @@ filetype plugin indent on
 syntax enable
 execute pathogen#infect()
 
+" Tagbar
 let g:tagbar_position = 'topleft vertical'
 let g:tagbar_iconchars = ['▸', '▾']
 let g:tagbar_width = 42
 let g:tagbar_sort = 0
 
+" Code minimap
 let g:minimap_auto_start = 0
 
+" Appearance
+colorscheme xcodelight
+
 " Navigation
-noremap <C-t> :tabe
+noremap <C-t> :tabe %:h<CR>
 noremap <C-n> :bnext<CR>
 noremap <C-p> :bprevious<CR>
+noremap <C-x> :bdelete<CR>
 
 " Editing
 noremap <silent> <CR> :Commentary<CR>
@@ -57,4 +63,3 @@ let g:airline_section_x = '%y'
 " let g:airline_theme='violet'
 
 set statusline+=%{FugitiveStatusline()}
-
