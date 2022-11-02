@@ -9,6 +9,8 @@ set nu rnu
 set mouse=a
 set smartindent
 
+set termguicolors
+
 " Plugin management
 filetype plugin indent on
 syntax enable

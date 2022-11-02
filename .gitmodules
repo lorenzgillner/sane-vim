@@ -22,3 +22,6 @@
 [submodule "thirdparty/plugins/airline"]
 	path = thirdparty/plugins/airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "thirdparty/themes/xcode"]
+	path = thirdparty/plugins/xcode
+	url = https://github.com/arzg/vim-colors-xcode.git
